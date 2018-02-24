@@ -13,7 +13,11 @@ namespace HomeworkPlus
 		{
 			InitializeComponent();
 
-            
+            EnglishButton.Clicked += delegate
+            {
+                Navigation.PushAsync(new DescriptionPage());
+                
+            };
 		}
 	}
 }

@@ -124,6 +124,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\HomeworkPlusBackground.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HomeworkPlusLogo.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\HomeworkPlus\HomeworkPlus.projitems" Label="Shared" />
 </Project>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeworkPlus.DescriptionPage"
+             BackgroundImage="HomeworkPlusBackground.png"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout >
+            <AbsoluteLayout 
+            HorizontalOptions="Fill"
+            VerticalOptions="Start"
+            BackgroundColor="#FFBB35">
+                <Image 
+                    Source="HomeworkPlusLogo.png"
+                    HeightRequest="67"
+                    Aspect="AspectFill"/>
+                <Label 
+                   Text="MATH" 
+                   Margin="100, 20, 20, 20"
+                   VerticalOptions="FillAndExpand"
+                   FontSize="25"
+                   TextColor="White"
+                    VerticalTextAlignment="Center" />
+            </AbsoluteLayout>
+            <ScrollView>
+                <StackLayout
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand">
+                    <Button 
+                    x:Name="AskButton"
+                    HorizontalOptions="Center"
+                    Text="Ask a Question"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                    <Button 
+                    x:Name="HelpButton"
+                    HorizontalOptions="Center"
+                    Text="Help A Friend"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                    <Button 
+                    x:Name="QuestionsButton"
+                    HorizontalOptions="Center"
+                    Text="Your Questions"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                    <Button 
+                    x:Name="TutorButton"
+                    HorizontalOptions="Center"
+                    Text="Need a Tutor?"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

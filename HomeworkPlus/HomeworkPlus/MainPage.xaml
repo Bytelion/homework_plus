@@ -3,19 +3,25 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HomeworkPlus"
              x:Class="HomeworkPlus.MainPage"
-             BackgroundImage="HomeworkPlusBackground.png">
+             BackgroundImage="HomeworkPlusBackground.png"
+             NavigationPage.HasNavigationBar="false">
 
     <StackLayout >
         <AbsoluteLayout 
             HorizontalOptions="FillAndExpand"
             VerticalOptions="Start"
             BackgroundColor="#FFBB35">
+            <Image 
+                    Source="HomeworkPlusLogo.png"
+                    HeightRequest="67"
+                    Aspect="AspectFill"/>
             <Label 
-               Text="Homework+" 
-               Margin="20"
-               FontSize="25"
-               TextColor="White"
-               HorizontalTextAlignment="Center" />
+                   Text="HomeworkPlus" 
+                   Margin="100, 20, 20, 20"
+                   VerticalOptions="FillAndExpand"
+                   FontSize="25"
+                   TextColor="White"
+                    VerticalTextAlignment="Center" />
         </AbsoluteLayout>
         <ScrollView>       
             <StackLayout

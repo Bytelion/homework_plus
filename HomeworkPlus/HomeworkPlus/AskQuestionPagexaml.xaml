@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HomeworkPlus.AskQuestionPagexaml"
+             BackgroundImage="HomeworkPlusBackground.png"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Content>
+        <StackLayout >
+            <AbsoluteLayout 
+            HorizontalOptions="Fill"
+            VerticalOptions="Start"
+            BackgroundColor="#FFBB35">
+                <Image 
+                    Source="HomeworkPlusLogo.png"
+                    HeightRequest="67"
+                    Aspect="AspectFill"/>
+                <Label 
+                   Text="MATH" 
+                   Margin="100, 20, 20, 20"
+                   VerticalOptions="FillAndExpand"
+                   FontSize="25"
+                   TextColor="White"
+                    VerticalTextAlignment="Center" />
+            </AbsoluteLayout>
+            <ScrollView>
+                <StackLayout
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand">
+                    <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="Center">
+                        <Label
+                        Text="Class: "
+                        TextColor="Black"
+                        FontSize="20"/>
+                        <Label
+                        Text="Algebra 1"
+                        TextColor="Black"
+                        FontSize="20"/>
+                    </StackLayout>
+                    <StackLayout
+                        Orientation="Horizontal"
+                        HorizontalOptions="Center">                        
+                        <Entry
+                            Placeholder="Enter Your Question Here!"
+                            PlaceholderColor="DarkGray"
+                            TextColor="Black"
+                            FontSize="20"/>                        
+                    </StackLayout>
+                    <Button 
+                        Text="Post"
+                        FontSize="20"
+                        HorizontalOptions="Center"/>
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
