@@ -12,6 +12,8 @@ namespace HomeworkPlus
 		public MainPage()
 		{
 			InitializeComponent();
+
+            
 		}
 	}
 }

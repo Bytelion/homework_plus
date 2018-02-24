@@ -2,10 +2,69 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HomeworkPlus"
-             x:Class="HomeworkPlus.MainPage">
+             x:Class="HomeworkPlus.MainPage"
+             BackgroundImage="HomeworkPlusBackground.png">
 
-	<Label Text="Welcome to Xamarin.Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <StackLayout >
+        <AbsoluteLayout 
+            HorizontalOptions="FillAndExpand"
+            VerticalOptions="Start"
+            BackgroundColor="#FFBB35">
+            <Label 
+               Text="Homework+" 
+               Margin="20"
+               FontSize="25"
+               TextColor="White"
+               HorizontalTextAlignment="Center" />
+        </AbsoluteLayout>
+        <ScrollView>       
+            <StackLayout
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="StartAndExpand">
+                <Button 
+                    x:Name="EnglishButton"
+                    HorizontalOptions="Center"
+                    Text="English"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                <Button 
+                    x:Name="ScienceButton"
+                    HorizontalOptions="Center"
+                    Text="Science"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                <Button 
+                    x:Name="SocialStudiesButton"
+                    HorizontalOptions="Center"
+                    Text="Social Studies"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                <Button 
+                    x:Name="MathButton"
+                    HorizontalOptions="Center"
+                    Text="Math"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                <Button 
+                    x:Name="LanguageArtsButton"
+                    HorizontalOptions="Center"
+                    Text="Language Arts"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                <Button 
+                    x:Name="ElectivesButton"
+                    HorizontalOptions="Center"
+                    Text="Electives"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                <Button 
+                    x:Name="OtherButton"
+                    HorizontalOptions="Center"
+                    Text="Other"
+                    FontSize="20"
+                    WidthRequest="200"/>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 
 </ContentPage>

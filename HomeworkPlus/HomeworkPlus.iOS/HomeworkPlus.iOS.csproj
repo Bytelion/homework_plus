@@ -121,6 +121,9 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\HomeworkPlusBackground.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\HomeworkPlus\HomeworkPlus.projitems" Label="Shared" />
 </Project>
