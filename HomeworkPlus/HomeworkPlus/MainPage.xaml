@@ -48,7 +48,7 @@
                 <Button 
                     x:Name="MathButton"
                     HorizontalOptions="Center"
-                    Text="Math"
+                    Text="Mathematics"
                     FontSize="20"
                     WidthRequest="200"/>
                 <Button 

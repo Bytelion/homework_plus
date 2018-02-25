@@ -15,11 +15,12 @@
                     HeightRequest="67"
                     Aspect="AspectFill"/>
                 <Label 
-                   Text="MATH" 
-                   Margin="100, 20, 20, 20"
-                   VerticalOptions="FillAndExpand"
-                   FontSize="25"
-                   TextColor="White"
+                    x:Name="SubjectLabel"
+                    Text="MATH" 
+                    Margin="100, 20, 20, 20"
+                    VerticalOptions="FillAndExpand"
+                    FontSize="25"
+                    TextColor="White"
                     VerticalTextAlignment="Center" />
             </AbsoluteLayout>
             <ScrollView>

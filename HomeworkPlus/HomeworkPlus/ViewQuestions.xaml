@@ -15,22 +15,27 @@
                     HeightRequest="67"
                     Aspect="AspectFill"/>
                 <Label 
-                   Text="MATH" 
-                   Margin="100, 20, 20, 20"
-                   VerticalOptions="FillAndExpand"
-                   FontSize="25"
-                   TextColor="White"
+                    x:Name="SubjectLabel"
+                    Text="MATH" 
+                    Margin="100, 20, 20, 20"
+                    VerticalOptions="FillAndExpand"
+                    FontSize="25"
+                    TextColor="White"
                     VerticalTextAlignment="Center" />
             </AbsoluteLayout>
             <ScrollView>
                 <StackLayout
                     HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="StartAndExpand">
-                    <ListView x:Name="QuestionList" HasUnevenRows="True">
+                    VerticalOptions="FillAndExpand">
+                    <ListView x:Name="QuestionList" 
+                              HasUnevenRows="True"
+                              Margin="10"
+                              BackgroundColor="White"
+                              Opacity="0.75">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
-                                    <StackLayout Orientation="Vertical">
+                                    <StackLayout Orientation="Vertical" Padding="10">
                                         <Label Text="{Binding className}" Font="18" TextColor="Black"></Label>
                                         <Label Text="{Binding question}" TextColor="Gray"></Label>
                                         <Label Text="{Binding timeCreated}" TextColor="Gray"></Label>
