@@ -19,6 +19,11 @@ namespace HomeworkPlus
 
             string subject = CrossSettings.Current.GetValueOrDefault("subject", "");
             SubjectLabel.Text = subject;
+
+            SubmitButton.Clicked += delegate
+            {
+                Application.Current.MainPage.Navigation.PopAsync();
+            };
         }
 	}
 }
