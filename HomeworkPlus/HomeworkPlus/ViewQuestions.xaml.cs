@@ -38,7 +38,8 @@ namespace HomeworkPlus
             var postsJson = CrossSettings.Current.GetValueOrDefault(subject, "");
             if (postsJson != null && postsJson != "" && postsJson != "[]")
             {
-                questions = JsonConvert.DeserializeObject<List<Question>>(postsJson);                
+                questions = JsonConvert.DeserializeObject<List<Question>>(postsJson);
+                questions.Reverse();
                 QuestionList.ItemsSource = questions;
             }
         }
