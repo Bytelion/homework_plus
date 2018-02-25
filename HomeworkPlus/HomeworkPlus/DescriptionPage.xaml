@@ -32,13 +32,7 @@
                     HorizontalOptions="Center"
                     Text="Ask a Question"
                     FontSize="20"
-                    WidthRequest="200"/>
-                    <Button 
-                    x:Name="HelpButton"
-                    HorizontalOptions="Center"
-                    Text="Help A Friend"
-                    FontSize="20"
-                    WidthRequest="200"/>
+                    WidthRequest="200"/>                    
                     <Button 
                     x:Name="QuestionsButton"
                     HorizontalOptions="Center"
@@ -49,6 +43,12 @@
                     x:Name="TutorButton"
                     HorizontalOptions="Center"
                     Text="Need a Tutor?"
+                    FontSize="20"
+                    WidthRequest="200"/>
+                    <Button 
+                    x:Name="HelpButton"
+                    HorizontalOptions="Center"
+                    Text="Help A Friend"
                     FontSize="20"
                     WidthRequest="200"/>
                 </StackLayout>
