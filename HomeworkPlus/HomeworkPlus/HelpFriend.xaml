@@ -27,66 +27,15 @@
                 <StackLayout
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="FillAndExpand">
-                    <Label
-                        HorizontalOptions="Center"
-                        Text="Tutor Request"
-                        FontSize="25"
-                        TextColor="Black"/>
-                    <StackLayout
-                        Orientation="Horizontal">
-                        <Label
-                            VerticalOptions="Center"
-                            Text="Class:"
-                            FontSize="18"                            
-                            TextColor="Black"/>
-                        <Entry 
-                            Placeholder="Enter Class Name"
-                            PlaceholderColor="DarkGray"
-                            TextColor="Black"
-                            Margin="42,0,0,0"
-                            FontSize="18"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal">
-                        <Label
-                            VerticalOptions="Center"
-                            Text="Location"
-                            FontSize="18"
-                            TextColor="Black"/>
-                        <Entry 
-                            Placeholder="Enter Location"
-                            PlaceholderColor="DarkGray"
-                            TextColor="Black"
-                            Margin="21,0,0,0"
-                            FontSize="18"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal">
-                        <Label
-                            VerticalOptions="Center"
-                            Text="Time"
-                            FontSize="18"
-                            TextColor="Black"/>
-                        <Entry 
-                            Placeholder="Enter Time"
-                            PlaceholderColor="DarkGray"
-                            TextColor="Black"
-                            Margin="51,0,0,0"
-                            FontSize="18"/>
-                    </StackLayout>
-                    <StackLayout
-                        Orientation="Horizontal">
-                        <Label
-                            VerticalOptions="Center"
-                            Text="Availability:"
-                            FontSize="18"
-                            TextColor="Black"/>
-                        <Entry 
-                            Placeholder="Enter Availability"
-                            PlaceholderColor="DarkGray"
-                            TextColor="Black"
-                            FontSize="18"/>
-                    </StackLayout>
+                    <Button 
+                        Text="Answer a Question"
+                        FontSize="20"/>
+                    <Button 
+                        Text="Become a Tutor"
+                        FontSize="20"/>
+                    <Button 
+                        Text="Verify Answers"
+                        FontSize="20"/>
                 </StackLayout>
             </ScrollView>
         </StackLayout>

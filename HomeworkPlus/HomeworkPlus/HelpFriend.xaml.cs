@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Plugin.Settings;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,9 @@ namespace HomeworkPlus
 		public HelpFriend ()
 		{
 			InitializeComponent ();
-		}
+
+            string subject = CrossSettings.Current.GetValueOrDefault("subject", "");
+            SubjectLabel.Text = subject;
+        }
 	}
 }

@@ -34,6 +34,11 @@ namespace HomeworkPlus
             {
                 Navigation.PushAsync(new TutorPage());
             };
+
+            HelpButton.Clicked += delegate
+            {
+                Navigation.PushAsync(new HelpFriend());
+            };
         }
 	}
 }
