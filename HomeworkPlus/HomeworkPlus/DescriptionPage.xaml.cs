@@ -19,7 +19,12 @@ namespace HomeworkPlus
             AskButton.Clicked += delegate
             {
                 Navigation.PushAsync(new AskQuestionPagexaml());
-            };            
+            };
+
+            QuestionsButton.Clicked += delegate
+            {
+                Navigation.PushAsync(new ViewQuestions());
+            };
         }
 	}
 }

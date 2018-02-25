@@ -24,30 +24,38 @@
             </AbsoluteLayout>
             <ScrollView>
                 <StackLayout
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="StartAndExpand">
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="StartAndExpand">
                     <StackLayout
                         Orientation="Horizontal"
                         HorizontalOptions="Center">
                         <Label
                         Text="Class: "
+                            VerticalOptions="Center"
                         TextColor="Black"
-                        FontSize="20"/>
-                        <Label
-                        Text="Algebra 1"
-                        TextColor="Black"
-                        FontSize="20"/>
+                        FontSize="15"/>
+                        <Entry
+                            x:Name="ClassName"
+                            Placeholder="Enter Class Name"
+                            PlaceholderColor="DarkGray"
+                            TextColor="Black"
+                            FontSize="15"/>
                     </StackLayout>
                     <StackLayout
                         Orientation="Horizontal"
-                        HorizontalOptions="Center">                        
-                        <Entry
-                            Placeholder="Enter Your Question Here!"
-                            PlaceholderColor="DarkGray"
-                            TextColor="Black"
-                            FontSize="20"/>                        
+                        HorizontalOptions="Center">
+                        <Frame OutlineColor="DarkGray">
+                            <Editor
+                                x:Name="PostText"
+                                WidthRequest="175"
+                                HeightRequest="150"
+                                Text="Please enter a question."
+                                TextColor="DarkGray"
+                                FontSize="12"/>
+                        </Frame>                        
                     </StackLayout>
                     <Button 
+                        x:Name="PostButton"
                         Text="Post"
                         FontSize="20"
                         HorizontalOptions="Center"/>

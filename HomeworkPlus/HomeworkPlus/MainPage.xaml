@@ -16,7 +16,7 @@
                     HeightRequest="67"
                     Aspect="AspectFill"/>
             <Label 
-                   Text="HomeworkPlus" 
+                   Text="Homework+" 
                    Margin="100, 20, 20, 20"
                    VerticalOptions="FillAndExpand"
                    FontSize="25"
